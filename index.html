@@ -1,0 +1,37 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Download and convert YouTube Videos.</title>
+    <meta name="author" content="Stephan Schmitz" />
+    <link rel="stylesheet" media="all" href="assets/css/layout.css" />
+    <link rel="stylesheet" media="screen" href="assets/css/animate-custom2.css" />
+    <link rel="stylesheet" media="all" href="assets/jquery.confirm/jquery.confirm.css" />
+
+</head>
+<body>
+    <div id="container">
+        <!-- Title + description -->
+        <h1><a href="#" onclick="javascript: do_reset(); void(0);">yt_downloader</a></h1>
+        <p><cite><a href="https://github.com/eyecatchup/php-yt_downloader" target="_blank" title="Source Code on GitHub.com">Open Source PHP class</a> to download and convert YouTube<sup>&#8482;</sup> videos.</cite></p>
+
+        <!-- Download form -->
+        <div id="download" class="animated">
+            <input type="text" name="yturl" id="ytUrl" value="" placeholder="Try it: Insert a YouTube URL and click the download button." required />
+            <input class="blue" type="submit" id="s" value="Download" />
+        </div>
+
+        <!-- Results -->
+        <div id="ret" class="animated flipOutX">
+        </div>
+    </div>
+
+   
+    <!-- App scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/jquery.confirm/jquery.confirm.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+</html>
